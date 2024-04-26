@@ -14,6 +14,44 @@ function renderLicenseSection(license) {}
 function generateMarkdown(data) {
   return `# ${data.title}
 
+  <!-- [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) -->
+
+
+## Description
+
+${data.description}
+
+## Table of Contents
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [Questions](#questions)
+
+## Installation
+
+${data.installation}
+
+## Usage
+
+${data.usage}
+
+## Contributing
+
+${data.contributing}
+
+<!-- ## Tests
+Instructions on how to run tests for your project and any test examples.-->## Questions
+
+If you have any questions, feel free to contact me:
+
+- GitHub: ${data.git_hub}(https://github.com/${data.git_hub})
+- Email: ${data.email}
+
+## License
+
+<!--This project is licensed under the terms of the [MIT license](https://opensource.org/licenses/MIT).-->
 `;
 }
 
