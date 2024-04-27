@@ -14,6 +14,7 @@ two
 - [Contributing](#contributing)
 - [Tests](#tests)
 - [Questions](#questions)
+- [License](#license)
 
 ## Installation
 
@@ -28,7 +29,9 @@ four
 five
 
 <!-- ## Tests
-Instructions on how to run tests for your project and any test examples.-->## Questions
+Instructions on how to run tests for your project and any test examples.-->
+
+## Questions
 
 If you have any questions, feel free to contact me:
 
@@ -37,4 +40,4 @@ If you have any questions, feel free to contact me:
 
 ## License
 
-<!--This project is licensed under the terms of the [MIT license](https://opensource.org/licenses/MIT).-->
+This project is licensed under the terms of the [MIT License](https://opensource.org/licenses/MIT).
