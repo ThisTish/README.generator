@@ -5,7 +5,7 @@ import inquirer from "inquirer";
 // import prompt from "inquirer/lib/ui/prompt.js";
 import { stringify } from "querystring";
 import generateMarkdown from './utils/generateMarkdown.js';
-import renderLicenseBadge from './utils/generateMarkdown.js'
+// import renderLicenseBadge from './utils/generateMarkdown.js'
 import Choices from 'inquirer/lib/objects/choices.js';
 
 
@@ -94,8 +94,8 @@ function writeToFile(fileName, data) {
 function init() {
 	inquirer.prompt(questions)
 	.then((data) => {
+		console.log(data)
 		writeToFile('tryREADME.md',generateMarkdown(data))
-		renderLicenseBadge(data)
 		// console.log(data.title)
 		// console.log(data.description)
 		// console.log(data.installation)

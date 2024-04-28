@@ -1,11 +1,11 @@
 // TODO: Create a function that returns a license badge based on which license is passed in line 17
 // If there is no license, return an empty string
-export function renderLicenseBadge(license) {
+function renderLicenseBadge(license) {
   try{
-    const licenseChoice = license
+    console.log(`first: ${license}`)
     let licenseBadge
 
-    switch(licenseChoice){
+    switch(license){
       case "MIT License":
         licenseBadge = `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]`
         break
@@ -30,8 +30,8 @@ export function renderLicenseBadge(license) {
       default:
         licenseBadge = ""
     }
+    console.log(`second: ${licenseBadge}`)
     return licenseBadge
-    console.log(licenseBadge)
   }
   catch(err){
     console.log('Error Occured during badge rendering', err)
@@ -58,7 +58,8 @@ function renderLicenseSection(license) {
 function generateMarkdown(data) {
   return `# ${data.title}
 
-  ${licenseBadge}
+
+${renderLicenseBadge(data.license)}
 
 
 ## Description
@@ -103,4 +104,4 @@ This project is licensed under the terms of the [${data.license}](https://openso
 }
 
 export default generateMarkdown;
-// export function renderLicenseBadge;
+// export renderLicenseBadge;
