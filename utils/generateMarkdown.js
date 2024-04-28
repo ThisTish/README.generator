@@ -1,5 +1,3 @@
-// TODO: Create a function that returns a license badge based on which license is passed in line 17
-// If there is no license, return an empty string
 function renderLicenseBadge(license) {
   try{
     console.log(`first: ${license}`)
@@ -10,25 +8,28 @@ function renderLicenseBadge(license) {
         licenseBadge = `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]`
         break
       case "GNU(GPL v3)":
-        licenseBadge = `[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)`
+        licenseBadge = `[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)]`
         break
       case "Apache 2.0":
-        licenseBadge = `[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`
+        licenseBadge = `[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)]`
         break
       case "BSD 3-Clause":
-        licenseBadge = `[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)`
+        licenseBadge = `[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)]`
         break
       case "Creative Commons":
         licenseBadge = `[![License]( https://img.shields.io/badge/License-Creative_Commons-yellowgreen.svg)]`
         break
       case "Mozilla Public License":
-        licenseBadge = `[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)`
+        licenseBadge = `[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)]`
         break
       case "GNU-LGPL v3":
-        licenseBadge = `[![License: LGPL v3](https://img.shields.io/badge/License-LGPL_v3-blue.svg)](https://www.gnu.org/licenses/lgpl-3.0)`
+        licenseBadge = `[![License: LGPL v3](https://img.shields.io/badge/License-LGPL_v3-blue.svg)]`
         break
-      default:
+      case "other":
         licenseBadge = ""
+        break
+      // default:
+      //   licenseBadge = ""
     }
     console.log(`second: ${licenseBadge}`)
     return licenseBadge
@@ -38,11 +39,8 @@ function renderLicenseBadge(license) {
   }
 }
 
-
-// TODO: Create a function that returns the license link line 17
 function renderLicenseLink(license) {
   try{
-    // console.log(`first: ${license}`)
     let licenseLink
 
     switch(license){
@@ -50,7 +48,7 @@ function renderLicenseLink(license) {
         licenseLink = `(https://opensource.org/licenses/MIT)`
         break
       case "GNU(GPL v3)":
-        licenseLink = `(https://www.gnu.org/licenses)`
+        licenseLink = `(https://www.gnu.org/licenses/gpl-3.0)`
         break
       case "Apache 2.0":
         licenseLink = `(https://opensource.org/licenses/Apache-2.0)`
@@ -67,27 +65,23 @@ function renderLicenseLink(license) {
       case "GNU-LGPL v3":
         licenseLink = `(https://www.gnu.org/licenses/lgpl-3.0)`
         break
-      default:
+      case "other":
         licenseLink = ""
+        break
     }
     console.log(`third: ${licenseLink}`)
     return licenseLink
   }
   catch(err){
-    console.log('Error Occured during badge rendering', err)
+    console.log('Error Occured during license link rendering', err)
   }
 }
-// If there is no license, return an empty string
 
-// TODO: Create a function that returns the license section of README line 55
-// If there is no license, return an empty string
 function renderLicenseSection(license, copyright) {
   let current = new Date()
   let year = current.getFullYear()
 
   try{
-    console.log(`sectionLicense: ${license}`)
-    console.log(`sectionCopyright: ${copyright}`)
     let licenseText
 
     switch(license){
@@ -367,30 +361,30 @@ function renderLicenseSection(license, copyright) {
         If the Library as you received it specifies that a proxy can decide whether future versions of the GNU Lesser General Public License shall apply, that proxy's public statement of acceptance of any version is permanent authorization for you to choose that version for the Library.`
         break
       
-      default:
+      case "other":
         licenseText = ""
+        break
     }
     return licenseText
   }
   catch(err){
-    console.log('Error Occured during badge rendering', err)
+    console.log('Error Occured during license section rendering', err)
   }
 
 }
 
-// TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  return `# ${data.title}
+  return `# **${data.title}**
 
 
-${renderLicenseBadge(data.license)}${renderLicenseLink(data.license)}
+${renderLicenseBadge(data.license)}${renderLicenseLink(data.license)}<!--Hide URL-->
 
 
-## Description
+## 📰 Description
 
 ${data.description}
 
-## Table of Contents
+## 🔎 Table of Contents
 
 - [Installation](#installation)
 - [Usage](#usage)
@@ -399,32 +393,31 @@ ${data.description}
 - [Questions](#questions)
 - [License](#license)
 
-## Installation
+## 💾 Installation
 
 ${data.installation}
 
-## Usage
+## 🖱️ Usage
 
 ${data.usage}
 
-## Contributing
+## 🌐 Contributing
 
 ${data.contributing}
 
-<!-- ## Tests
-Instructions on how to run tests for your project and any test examples.-->
+## 📝 Tests
 
-## Questions
 
-If you have any questions, feel free to contact me:
+## ✋ Questions
 
-- GitHub: ${data.git_hub}(https://github.com/${data.git_hub})
-- Email: ${data.email}
+If you have any questions, feel free to contact me at:
 
-## License
+- *GitHub: [${data.git_hub}](https://github.com/${data.git_hub})*
+- *Email: ${data.email}*
+
+## 🪪 License
 ${renderLicenseSection(data.license, data.copyright)}
 `;
 }
 
 export default generateMarkdown;
-// export renderLicenseBadge;
