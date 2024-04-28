@@ -2,7 +2,7 @@ import fs from 'fs'
 import inquirer from "inquirer";
 // import { stringify } from "querystring";
 import generateMarkdown from './utils/generateMarkdown.js';
-import Choices from 'inquirer/lib/objects/choices.js';
+// import Choices from 'inquirer/lib/objects/choices.js';
 
 const questions = [{
 		name:'title',
@@ -64,6 +64,13 @@ const questions = [{
 		name: 'git_hub',
 		type:'input',
 		message: 'What is your GitHub user name?',
+		default:''
+		
+	},
+	{
+		name: 'tests',
+		type:'input',
+		message: 'Have you written tests for this project?',
 		default:''
 		
 	}
