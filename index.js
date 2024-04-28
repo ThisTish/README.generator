@@ -52,6 +52,14 @@ const questions = [{
 		}
 	},
 	{
+		name: 'copyright',
+		type: 'input',
+		message: 'Who is the copyright holder?',
+		default(){
+			return 'copyright'
+		}
+	},
+	{
 		name: 'contributing',
 		type: 'input',
 		message: 'How can people contribute?',
@@ -95,6 +103,7 @@ function init() {
 	inquirer.prompt(questions)
 	.then((data) => {
 		console.log(data)
+		console.log(data.copyright)
 		writeToFile('tryREADME.md',generateMarkdown(data))
 		// console.log(data.title)
 		// console.log(data.description)
