@@ -12,11 +12,12 @@ Generate a professional README for your project by answering a few questions.
 - [Contributing](#contributing)
 - [Questions](#questions)
 
-## 💾 Installation
+## 💾 Installation <a id="installation"></a>
 
 Start by cloning the code from the GitHub repository. Then run ```git clone <clone link>``` in your terminal in a chosen directory. This application will need node and npm installed.
 
-## 🖱️ Usage
+## 🖱️ Usage <a id="usage"></a>
+
 
 To make your own high-quality README...
 You can initialize this application in a code editor, e.g., VS Code, by opening the cloned repository and running ```node index.js``` in the editor's terminal window.
@@ -28,12 +29,14 @@ After completing the questionare, the application will create a new file in that
 
 This application was made to be used again and again, but the newREADME.md file will be written over with the new responses each time. 
 
-## 🌐 Contributing
+## 🌐 Contributing <a id="contributing"></a>
+
 
 Please contact me through my email provided below to work together.
 
 
-## ✋ Questions
+## ✋ Questions <a id="questions"></a>
+
 
 If you have any questions, feel free to contact me at:
 

@@ -398,30 +398,35 @@ ${data.description}
 - [Questions](#questions)
 - [License](#license)
 
-## 💾 Installation
+## 💾 Installation <a id="installation"></a>
 
 ${data.installation}
 
-## 🖱️ Usage
+## 🖱️ Usage <a id="usage"></a>
+
 
 ${data.usage}
 
-## 🌐 Contributing
+## 🌐 Contributing <a id="contributing"></a>
+
 
 ${data.contributing}
 
-## 📝 Tests
+## 📝 Tests <a id="tests"></a>
+
 
 ${data.tests}
 
-## ✋ Questions
+## ✋ Questions <a id="questions"></a>
+
 
 If you have any questions, feel free to contact me at:
 
 - *GitHub: [${data.git_hub}](https://github.com/${data.git_hub})*
 - *Email: ${data.email}*
 
-## 🪪 License
+## 🪪 License <a id="license"></a>
+
 ${renderLicenseSection(data.license, data.copyright)}
 `;
 }
