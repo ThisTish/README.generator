@@ -1,6 +1,5 @@
 function renderLicenseBadge(license) {
   try{
-    console.log(`first: ${license}`)
     let licenseBadge
 
     switch(license){
@@ -28,10 +27,7 @@ function renderLicenseBadge(license) {
       case "other":
         licenseBadge = ""
         break
-      // default:
-      //   licenseBadge = ""
     }
-    console.log(`second: ${licenseBadge}`)
     return licenseBadge
   }
   catch(err){
@@ -69,7 +65,6 @@ function renderLicenseLink(license) {
         licenseLink = ""
         break
     }
-    console.log(`third: ${licenseLink}`)
     return licenseLink
   }
   catch(err){

@@ -1,8 +1,6 @@
 import fs from 'fs'
 import inquirer from "inquirer";
-// import { stringify } from "querystring";
 import generateMarkdown from './utils/generateMarkdown.js';
-// import Choices from 'inquirer/lib/objects/choices.js';
 
 const questions = [{
 		name:'title',
@@ -70,7 +68,7 @@ const questions = [{
 	{
 		name: 'tests',
 		type:'input',
-		message: 'Have you written tests for this project?',
+		message: 'Include any tests written for this project.',
 		default:''
 		
 	}
@@ -90,9 +88,7 @@ function writeToFile(fileName, data) {
 function init() {
 	inquirer.prompt(questions)
 	.then((data) => {
-		console.log(data)
-		console.log(data.copyright)
-		writeToFile('new.md',generateMarkdown(data))
+		writeToFile('newREADME.md',generateMarkdown(data))
 	})
 }
 
