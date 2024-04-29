@@ -86,7 +86,9 @@ function renderLicenseSection(license, copyright) {
 
     switch(license){
       case "MIT License":
-        licenseText = `Copyright ${year} ${copyright}
+        licenseText = `MIT License
+
+        Copyright ${year} ${copyright}
 
         Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
         
@@ -118,7 +120,9 @@ function renderLicenseSection(license, copyright) {
         break
       
       case "Apache 2.0":
-        licenseText = `Copyright ${year} ${copyright}
+        licenseText = ` Apache 2.0
+        
+        Copyright ${year} ${copyright}
 
         Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
     
@@ -130,7 +134,9 @@ function renderLicenseSection(license, copyright) {
         break
       
       case "BSD 3-Clause":
-        licenseText = `Copyright ${year} ${copyright}
+        licenseText = `BSD 3-Clause
+        
+        Copyright ${year} ${copyright}
 
         Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
         
@@ -144,11 +150,15 @@ function renderLicenseSection(license, copyright) {
         break
       
       case "Creative Commons":
-        licenseText = `This license requires that reusers give credit to the creator. It allows reusers to distribute, remix, adapt, and build upon the material in any medium or format, for noncommercial purposes only. If others modify or adapt the material, they must license the modified material under identical terms.`
+        licenseText = `Creative Commons License
+
+        This license requires that reusers give credit to the creator. It allows reusers to distribute, remix, adapt, and build upon the material in any medium or format, for noncommercial purposes only. If others modify or adapt the material, they must license the modified material under identical terms.`
         break
       
       case "Mozilla Public License":
-        licenseText = `1. Definitions
+        licenseText = `Mozilla Public License
+        
+1. Definitions
         
         1.1. “Contributor”
         means each individual or legal entity that creates, contributes to the creation of, or owns Covered Software.
