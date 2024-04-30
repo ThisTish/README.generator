@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "Create a professional README.md from the command line.",
   "main": "index.js",
-  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,6 +10,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "inquirer": "^9.2.19"
+    "inquirer": "^8.2.4"
   }
 }

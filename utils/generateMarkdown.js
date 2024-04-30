@@ -431,4 +431,4 @@ ${renderLicenseSection(data.license, data.copyright)}
 `;
 }
 
-export default generateMarkdown;
+module.exports= generateMarkdown;

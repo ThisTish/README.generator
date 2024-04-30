@@ -20,7 +20,9 @@ Start by cloning the code from the GitHub repository. Then run ```git clone <clo
 
 
 To make your own high-quality README...
+
 You can initialize this application in a code editor, e.g., VS Code, by opening the cloned repository and running ```node index.js``` in the editor's terminal window.
+
 You can also run the same command ```node index.js``` in your desktop's terminal, as long as you are in the repository's directory.
 
 The application will run through a series of prompts where you will include the information related to your project. You have the option to answer only the questions that apply. However, the predetermined sections will still appear, with empty contents if no information is provided(editing is described below). 

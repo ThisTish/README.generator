@@ -1,6 +1,6 @@
-import fs from 'fs'
-import inquirer from "inquirer";
-import generateMarkdown from './utils/generateMarkdown.js';
+const fs = require( 'fs')
+const inquirer = require("inquirer")
+const generateMarkdown = require('./utils/generateMarkdown.js')
 
 const questions = [{
 		name:'title',
