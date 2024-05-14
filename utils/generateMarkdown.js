@@ -382,7 +382,7 @@ function generateMarkdown(data) {
   return `# **${data.title}**
 
 
-${renderLicenseBadge(data.license)}${renderLicenseLink(data.license)}<!--Hide URL-->
+${renderLicenseBadge(data.license)}${renderLicenseLink(data.license)}
 
 
 ## 📰 Description
@@ -412,7 +412,7 @@ ${data.usage}
 
 ${data.contributing}
 
-## 📝 Tests <a id="tests"></a>
+## 🧪 Tests <a id="tests"></a>
 
 
 ${data.tests}
@@ -423,7 +423,7 @@ ${data.tests}
 If you have any questions, feel free to contact me at:
 
 - *GitHub: [${data.git_hub}](https://github.com/${data.git_hub})*
-- *Email: ${data.email}*
+- *Contact: ${data.email}*
 
 ## 🪪 License <a id="license"></a>
 
