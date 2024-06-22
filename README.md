@@ -44,6 +44,6 @@ Please contact me through my email provided below to work together.
 
 If you have any questions, feel free to contact me at:
 
-- *GitHub: [tishthegoat](https://github.com/tishthegoat)*
-- *Email: tishthegoat@gmail.com*
+- *GitHub: [ThisTish](https://github.com/thistish)*
+- *Email: tish.sirface@gmail.com*
 
