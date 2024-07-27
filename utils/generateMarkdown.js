@@ -425,6 +425,7 @@ If you have any questions, feel free to contact me at:
 
 - *GitHub: [${data.git_hub}](https://github.com/${data.git_hub})*
 - *Contact: ${data.email}*
+- *Portfolio: tish-sirface-portfolio.netlify.app*
 
 ## 🪪 License <a id="license"></a>
 
