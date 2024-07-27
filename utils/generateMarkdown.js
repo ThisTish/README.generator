@@ -31,7 +31,7 @@ function renderLicenseBadge(license) {
     return licenseBadge
   }
   catch(err){
-    console.log('Error Occured during badge rendering', err)
+    console.log('Error Occurred during badge rendering', err)
   }
 }
 
@@ -68,7 +68,7 @@ function renderLicenseLink(license) {
     return licenseLink
   }
   catch(err){
-    console.log('Error Occured during license link rendering', err)
+    console.log('Error Occurred during license link rendering', err)
   }
 }
 
@@ -147,7 +147,7 @@ function renderLicenseSection(license, copyright) {
       case "Creative Commons":
         licenseText = `Creative Commons License
 
-        This license requires that reusers give credit to the creator. It allows reusers to distribute, remix, adapt, and build upon the material in any medium or format, for noncommercial purposes only. If others modify or adapt the material, they must license the modified material under identical terms.`
+        This license requires that users give credit to the creator. It allows reusers to distribute, remix, adapt, and build upon the material in any medium or format, for noncommercial purposes only. If others modify or adapt the material, they must license the modified material under identical terms.`
         break
       
       case "Mozilla Public License":
@@ -373,7 +373,7 @@ function renderLicenseSection(license, copyright) {
     return licenseText
   }
   catch(err){
-    console.log('Error Occured during license section rendering', err)
+    console.log('Error Occurred during license section rendering', err)
   }
 
 }
@@ -397,6 +397,7 @@ ${data.description}
 - [Tests](#tests)
 - [Questions](#questions)
 - [License](#license)
+- [Acknowledgements](#acknowledgments)
 
 ## 💾 Installation <a id="installation"></a>
 
@@ -417,7 +418,7 @@ ${data.contributing}
 
 ${data.tests}
 
-## ✋ Questions <a id="questions"></a>
+## ❔ Questions <a id="questions"></a>
 
 
 If you have any questions, feel free to contact me at:
@@ -428,7 +429,13 @@ If you have any questions, feel free to contact me at:
 ## 🪪 License <a id="license"></a>
 
 ${renderLicenseSection(data.license, data.copyright)}
+
+
+## 🙌 Acknowledgments <a id="acknowledgments"></a>
+
+
 `;
 }
+
 
 module.exports= generateMarkdown;
